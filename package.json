@@ -1,0 +1,27 @@
+{
+  "name": "clipboard-manager",
+  "version": "1.0.0",
+  "description": "Clibor風クリップボード履歴マネージャー",
+  "main": "src/main.js",
+  "scripts": {
+    "postinstall": "node scripts/install-electron.js",
+    "start": "electron .",
+    "start:bg": "node scripts/launch-background.js",
+    "dev": "electron . --dev",
+    "fix-electron": "node scripts/install-electron.js"
+  },
+  "keywords": [
+    "clipboard",
+    "history",
+    "clibor"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.4.11"
+  },
+  "dependencies": {
+    "electron-store": "^8.2.0",
+    "node-global-key-listener": "^0.3.0"
+  }
+}
